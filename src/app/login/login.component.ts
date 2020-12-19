@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
       "email": this.loginEmail,
       "password": this.loginPassword
     }
-    this.http.post("http://localhost:3000/user/valid",user)
+    this.http.post("https://personal-budget-final-server-nwysp.ondigitalocean.app/user/valid",user)
       .subscribe((res: any) => {
         if(res == "true"){
           this.route.navigate(['/budget']);
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         "email" : this.signUpEmail,
         "password" : this.signUpPassword
       }
-      this.http.post("http://localhost:3000/new/user", user)
+      this.http.post("https://personal-budget-final-server-nwysp.ondigitalocean.app/new/user", user)
         .subscribe((res: any) => {
           window.alert("Registered Successfully")
           this.route.navigate(['/budget']);

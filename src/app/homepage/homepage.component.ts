@@ -39,7 +39,7 @@ public dataSource =  {
 
 getData(){
   this.isChartVisible = true;
-  this.http.get('http://localhost:3000/budget')
+  this.http.get('https://personal-budget-final-server-nwysp.ondigitalocean.app/budget')
 
     .subscribe((res: any) => {
       for (var i = 0; i < res.length; i++) {

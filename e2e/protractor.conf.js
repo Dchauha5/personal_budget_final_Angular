@@ -16,7 +16,7 @@ exports.config = {
     browserName: 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'https://personal-budget-final-angular-36kam.ondigitalocean.app',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
