@@ -125,7 +125,7 @@ updateBudget(){
     title : this.title,
     budget : this.amount
   }
-  this.http.post("https://personal-budget-final-angular-36kam.ondigitalocean.app/new/budget",body)
+  this.http.post("https://personal-budget-final-server-nwysp.ondigitalocean.app/new/budget",body)
     .subscribe((res: any) => {
       this.getData();
       })
@@ -134,7 +134,7 @@ updateBudget(){
 deleteBudget(){
   this.isChartVisible = false;
   let id = "something"
-    this.http.delete("https://personal-budget-final-angular-36kam.ondigitalocean.app/remove/budget")
+    this.http.delete("https://personal-budget-final-server-nwysp.ondigitalocean.app/remove/budget")
     .subscribe((res: any) => {
       this.getData();
 
